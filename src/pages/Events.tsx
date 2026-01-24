@@ -26,7 +26,6 @@ export default function Events() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.heroLabel}>Archive</span>
           <h1 className={styles.heroTitle}>Events</h1>
           <p className={styles.heroSubtitle}>
             From forest gatherings to studio sessions — documenting our sonic journey.

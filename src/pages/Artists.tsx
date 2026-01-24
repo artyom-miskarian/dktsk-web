@@ -11,7 +11,6 @@ export default function Artists() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.heroLabel}>The Collective</span>
           <h1 className={styles.heroTitle}>Artists</h1>
           <p className={styles.heroSubtitle}>
             Meet the producers and performers who shape the dk.tsk sound.

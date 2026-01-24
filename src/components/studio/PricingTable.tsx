@@ -29,7 +29,6 @@ const pricingPlans: PricingPlan[] = [
       'Engineer included',
       'Refreshments',
     ],
-    popular: true,
   },
   {
     id: 'full-day',
@@ -55,12 +54,9 @@ export default function PricingTable() {
         {pricingPlans.map((plan, index) => (
           <div
             key={plan.id}
-            className={`${styles.card} ${plan.popular ? styles.popular : ''}`}
+            className={styles.card}
             style={{ animationDelay: `${index * 100}ms` }}
           >
-            {plan.popular && (
-              <span className={styles.popularBadge}>Most Popular</span>
-            )}
 
             <div className={styles.header}>
               <h3 className={styles.name}>{plan.name}</h3>
@@ -85,7 +81,7 @@ export default function PricingTable() {
             </ul>
 
             <Button
-              variant={plan.popular ? 'primary' : 'secondary'}
+              variant="primary"
               fullWidth
               href="mailto:hello@dktsk.am?subject=Studio Booking"
             >

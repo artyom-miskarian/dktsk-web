@@ -75,7 +75,6 @@ export default function About() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.heroLabel}>Our Story</span>
           <h1 className={styles.heroTitle}>About dk.tsk</h1>
           <p className={styles.heroSubtitle}>
             From forest clearings to studio spaces — the evolution of a collective.

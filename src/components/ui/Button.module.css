@@ -36,25 +36,16 @@
   font-size: var(--text-base);
 }
 
-/* Primary variant - metallic silver */
+/* Primary variant - dark with subtle brightness */
 .primary {
-  background: linear-gradient(
-    135deg,
-    var(--metallic-start) 0%,
-    var(--metallic-mid) 50%,
-    var(--metallic-end) 100%
-  );
-  color: var(--bg-primary);
-  border: none;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .primary:hover {
-  background: linear-gradient(
-    135deg,
-    var(--text-primary) 0%,
-    var(--metallic-start) 50%,
-    var(--metallic-mid) 100%
-  );
+  background: var(--bg-elevated);
+  border-color: rgba(255, 255, 255, 0.15);
   box-shadow: var(--shadow-glow);
   transform: translateY(-2px);
 }
@@ -63,17 +54,17 @@
   transform: translateY(0);
 }
 
-/* Secondary variant - outlined */
+/* Secondary variant - darker */
 .secondary {
-  background: transparent;
-  color: var(--text-primary);
-  border: var(--border-light);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .secondary:hover {
-  background: rgba(192, 192, 192, 0.1);
-  border-color: var(--accent);
-  color: var(--accent-bright);
+  background: var(--bg-tertiary);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
 }
 
 /* Ghost variant - minimal */

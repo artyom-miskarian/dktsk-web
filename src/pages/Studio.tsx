@@ -24,7 +24,6 @@ export default function Studio() {
         </div>
 
         <div className={styles.heroContent}>
-          <span className={styles.heroLabel}>Teryan 91</span>
           <h1 className={styles.heroTitle}>Studio</h1>
           <p className={styles.heroSubtitle}>
             A space for creation

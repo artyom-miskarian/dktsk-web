@@ -31,7 +31,6 @@ export default function Contact() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.heroLabel}>Get in Touch</span>
           <h1 className={styles.heroTitle}>Contact</h1>
           <p className={styles.heroSubtitle}>
             Have a question, want to collaborate, or book the studio? We'd love to hear from you.
