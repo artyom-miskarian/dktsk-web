@@ -92,16 +92,25 @@ export default function EventDetail() {
             {event.lineup && event.lineup.length > 0 && (
               <div className={styles.lineup}>
                 <h2 className={styles.sectionTitle}>Lineup</h2>
-                <ul className={styles.lineupList}>
-                  {event.lineup.map((artist, index) => (
-                    <li key={index} className={styles.lineupItem}>
-                      <span className={styles.lineupNumber}>
-                        {String(index + 1).padStart(2, '0')}
-                      </span>
-                      <span className={styles.lineupName}>{artist}</span>
-                    </li>
+                <div
+                  className={styles.lineupGrid}
+                  style={{ '--lineup-columns': Math.min(event.lineup.length, 3) } as React.CSSProperties}
+                >
+                  {event.lineup.map((stageData, stageIndex) => (
+                    <div key={stageIndex} className={styles.lineupStage}>
+                      {stageData.stage && (
+                        <h3 className={styles.stageName}>{stageData.stage}</h3>
+                      )}
+                      <ul className={styles.lineupList}>
+                        {stageData.artists.map((artist, index) => (
+                          <li key={index} className={styles.lineupItem}>
+                            <span className={styles.lineupName}>{artist}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             )}
           </div>

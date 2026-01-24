@@ -47,20 +47,23 @@ export default function EventCard({ event, index = 0 }: EventCardProps) {
           </span>
         </div>
 
-        {event.lineup && event.lineup.length > 0 && (
-          <div className={styles.lineup}>
-            {event.lineup.slice(0, 3).map((artist, i) => (
-              <span key={i} className={styles.lineupArtist}>
-                {artist}
-              </span>
-            ))}
-            {event.lineup.length > 3 && (
-              <span className={styles.lineupMore}>
-                +{event.lineup.length - 3}
-              </span>
-            )}
-          </div>
-        )}
+        {event.lineup && event.lineup.length > 0 && (() => {
+          const allArtists = event.lineup.flatMap(stage => stage.artists);
+          return (
+            <div className={styles.lineup}>
+              {allArtists.slice(0, 3).map((artist, i) => (
+                <span key={i} className={styles.lineupArtist}>
+                  {artist}
+                </span>
+              ))}
+              {allArtists.length > 3 && (
+                <span className={styles.lineupMore}>
+                  +{allArtists.length - 3}
+                </span>
+              )}
+            </div>
+          );
+        })()}
       </div>
 
       <div className={styles.border} />

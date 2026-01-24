@@ -41,7 +41,7 @@ export interface Event {
   description: string;
   poster: string;
   gallery: string[];
-  lineup: string[];
+  lineup: { stage: string; artists: string[] }[];
   featured: boolean;
 }
 

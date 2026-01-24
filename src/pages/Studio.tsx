@@ -4,7 +4,7 @@ import styles from './Studio.module.css';
 
 const studioImages: string[] = [
   'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1598517834392-92a23efed4b9?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=800&h=600&fit=crop',
   'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop',
   'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&h=600&fit=crop',
 ];

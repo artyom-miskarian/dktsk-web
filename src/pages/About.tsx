@@ -71,7 +71,7 @@ const galleryImages: string[] = [
   'https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&h=400&fit=crop',
   'https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=600&h=400&fit=crop',
   'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1598517834392-92a23efed4b9?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=600&h=400&fit=crop',
 ];
 
 export default function About() {
