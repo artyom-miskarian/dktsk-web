@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 import styles from './SectionCards.module.css';
 
+import artistsIllustration from '@/assets/illustrations/artists.svg';
+import studioIllustration from '@/assets/illustrations/studio.svg';
+import eventsIllustration from '@/assets/illustrations/events.svg';
+import podcastsIllustration from '@/assets/illustrations/podcasts.svg';
+
 interface Section {
   id: string;
   title: string;
@@ -14,28 +19,28 @@ const sections: Section[] = [
     id: 'artists',
     title: 'Artists',
     description: 'Meet the collective',
-    image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop',
+    image: artistsIllustration,
     path: '/artists',
   },
   {
     id: 'studio',
     title: 'Studio',
     description: 'A space for creation',
-    image: 'https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=600&h=400&fit=crop',
+    image: studioIllustration,
     path: '/studio',
   },
   {
     id: 'events',
     title: 'Events',
     description: 'Past & upcoming gatherings',
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=400&fit=crop',
+    image: eventsIllustration,
     path: '/events',
   },
   {
     id: 'podcasts',
     title: 'Podcasts',
     description: 'Recorded sets & mixes',
-    image: 'https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=600&h=400&fit=crop',
+    image: podcastsIllustration,
     path: '/podcasts',
   },
 ];

@@ -146,7 +146,7 @@
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .navButton {
@@ -160,11 +160,5 @@
 
   .nextButton {
     right: var(--space-sm);
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
   }
 }

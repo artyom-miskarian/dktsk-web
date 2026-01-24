@@ -3,10 +3,10 @@ import { PricingTable } from '@/components/studio';
 import styles from './Studio.module.css';
 
 const studioImages: string[] = [
-  'https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
   'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1598517834392-92a23efed4b9?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&h=600&fit=crop',
 ];
 
 export default function Studio() {
@@ -14,21 +14,13 @@ export default function Studio() {
     <div className={styles.page}>
       {/* Hero */}
       <section className={styles.hero}>
-        <div className={styles.heroImageWrapper}>
-          <img
-            src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=1600&h=900&fit=crop"
-            alt="dk.tsk Studio"
-            className={styles.heroImage}
-          />
-          <div className={styles.heroOverlay} />
-        </div>
-
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Studio</h1>
           <p className={styles.heroSubtitle}>
             A space for creation
           </p>
         </div>
+        <div className={styles.heroDecoration} />
       </section>
 
       {/* About the Space */}

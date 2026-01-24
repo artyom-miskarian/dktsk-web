@@ -1,6 +1,11 @@
 import { SectionTitle, ImageGallery } from '@/components/ui';
 import styles from './About.module.css';
 
+import storyOrigins from '@/assets/illustrations/story-origins.svg';
+import storyGrowth from '@/assets/illustrations/story-growth.svg';
+import storyStudio from '@/assets/illustrations/story-studio.svg';
+import storyMission from '@/assets/illustrations/story-mission.svg';
+
 interface StoryBlock {
   id: string;
   title: string;
@@ -20,28 +25,28 @@ const storyBlocks: StoryBlock[] = [
     title: 'The Beginning',
     year: '2019',
     content: `It started with a clearing in Dilijan's forest, a generator, and a shared vision. A small group of friends gathered for what was meant to be nothing more than an experiment — an open-air rave in the Armenian highlands. But something happened that night under the stars. The music, the mountain air, the collective energy — it all merged into an experience that demanded to be repeated.`,
-    image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&h=600&fit=crop',
+    image: storyOrigins,
   },
   {
     id: 'growth',
     title: 'Growing Together',
     year: '2020-2023',
     content: `What began as sporadic gatherings evolved into something more intentional. Between the pandemic years and beyond, dk.tsk became a name whispered in Yerevan's underground. Workshops emerged. Late-night sessions stretched into mornings. A community formed — artists, producers, listeners, dreamers — all drawn to the same frequency.`,
-    image: 'https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=800&h=600&fit=crop',
+    image: storyGrowth,
   },
   {
     id: 'studio',
     title: 'Finding Home',
     year: '2024',
     content: `In 2024, a cultural grant made the impossible possible. Teryan 91 — a historic publishing house in the heart of Yerevan — became dk.tsk's permanent home. The space was transformed: walls that once held manuscripts now absorb bass frequencies. The studio isn't just a room; it's a statement. Electronic music in Armenia has a physical address.`,
-    image: 'https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&h=600&fit=crop',
+    image: storyStudio,
   },
   {
     id: 'mission',
     title: 'The Mission',
     year: 'Present',
     content: `dk.tsk exists for experimentation. For the late-night ideas that need space to breathe. For the artists who don't fit neatly into categories. We create, we gather, we push boundaries. The studio is open. The collective is growing. And the gatherings continue — now with a home to return to.`,
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=600&fit=crop',
+    image: storyMission,
   },
 ];
 
@@ -61,12 +66,12 @@ const values: Value[] = [
 ];
 
 const galleryImages: string[] = [
-  'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1504680177321-2e6a879aac86?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1598517834392-92a23efed4b9?w=600&h=400&fit=crop',
 ];
 
 export default function About() {
