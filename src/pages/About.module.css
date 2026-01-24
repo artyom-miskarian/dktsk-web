@@ -1,0 +1,248 @@
+.page {
+  padding-top: 80px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: var(--space-5xl) 0;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heroLabel {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: var(--space-md);
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius-sm);
+}
+
+.heroTitle {
+  font-size: var(--text-6xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  background: linear-gradient(135deg, var(--text-primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.heroDecoration {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 60% 40% at 50% 100%,
+    rgba(192, 192, 192, 0.05) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Story */
+.story {
+  padding: var(--space-3xl) 0;
+}
+
+.container {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.storyBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+  margin-bottom: var(--space-4xl);
+}
+
+.storyBlock.reversed {
+  direction: rtl;
+}
+
+.storyBlock.reversed .storyContent {
+  direction: ltr;
+}
+
+.storyBlock.reversed .storyImageWrapper {
+  direction: ltr;
+}
+
+.storyContent {
+  padding: var(--space-lg);
+}
+
+.storyYear {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: var(--space-md);
+}
+
+.storyTitle {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.storyText {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.storyImageWrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.storyImage {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.storyImageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.1) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+/* Values */
+.values {
+  padding: var(--space-4xl) 0;
+  background: var(--bg-secondary);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.valueCard {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  border: var(--border-subtle);
+  animation: fadeInUp 0.6s ease backwards;
+}
+
+.valueTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+  background: linear-gradient(135deg, var(--text-primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.valueDescription {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Gallery */
+.gallery {
+  padding: var(--space-4xl) 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .storyBlock {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .storyBlock.reversed {
+    direction: ltr;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 60px;
+  }
+
+  .hero {
+    padding: var(--space-3xl) 0;
+  }
+
+  .heroTitle {
+    font-size: var(--text-4xl);
+  }
+
+  .heroSubtitle {
+    font-size: var(--text-lg);
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .storyTitle {
+    font-size: var(--text-2xl);
+  }
+
+  .storyText {
+    font-size: var(--text-base);
+  }
+
+  .storyContent {
+    padding: 0;
+  }
+}

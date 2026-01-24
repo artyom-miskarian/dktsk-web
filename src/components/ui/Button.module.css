@@ -1,0 +1,135 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Sizes */
+.small {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-xs);
+}
+
+.medium {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--text-sm);
+}
+
+.large {
+  padding: var(--space-lg) var(--space-xl);
+  font-size: var(--text-base);
+}
+
+/* Primary variant - metallic silver */
+.primary {
+  background: linear-gradient(
+    135deg,
+    var(--metallic-start) 0%,
+    var(--metallic-mid) 50%,
+    var(--metallic-end) 100%
+  );
+  color: var(--bg-primary);
+  border: none;
+}
+
+.primary:hover {
+  background: linear-gradient(
+    135deg,
+    var(--text-primary) 0%,
+    var(--metallic-start) 50%,
+    var(--metallic-mid) 100%
+  );
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary variant - outlined */
+.secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: var(--border-light);
+}
+
+.secondary:hover {
+  background: rgba(192, 192, 192, 0.1);
+  border-color: var(--accent);
+  color: var(--accent-bright);
+}
+
+/* Ghost variant - minimal */
+.ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
+}
+
+.ghost:hover {
+  color: var(--text-primary);
+  background: rgba(192, 192, 192, 0.05);
+}
+
+/* Full width */
+.fullWidth {
+  width: 100%;
+}
+
+/* Disabled state */
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Icon */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Shine effect */
+.shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.primary:hover .shine {
+  left: 100%;
+}
