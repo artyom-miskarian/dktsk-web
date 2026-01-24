@@ -444,6 +444,12 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .bgImage {
+    mask-image: none;
+    -webkit-mask-image: none;
+    opacity: 0.5;
+  }
+
   .textBlock {
     left: var(--space-lg);
     bottom: 22%;

@@ -45,15 +45,6 @@ export default function Hero() {
       <div className={styles.bgNoise} />
       <div className={styles.bgGradient} />
 
-      {/* Sound wave circles - revealed by spotlight */}
-      <div
-        className={styles.grid}
-        style={{
-          '--mouse-x': `${mousePosition.x}px`,
-          '--mouse-y': `${mousePosition.y}px`,
-        } as CSSProperties}
-      />
-
       {/* Left-aligned minimal text block */}
       <div className={styles.textBlock}>
         <span className={styles.label}>sound collective</span>
