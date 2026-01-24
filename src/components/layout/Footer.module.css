@@ -12,8 +12,9 @@
 }
 
 .top {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: var(--space-3xl);
   padding-bottom: var(--space-2xl);
   border-bottom: var(--border-subtle);

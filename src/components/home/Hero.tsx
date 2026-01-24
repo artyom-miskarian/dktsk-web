@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, type CSSProperties } from 'react';
 import styles from './Hero.module.css';
-import logo from '@/assets/logo/logo.png';
+import bgImage from '@/assets/images/bg.jpg';
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -31,40 +31,43 @@ export default function Hero() {
 
   return (
     <section className={styles.hero} ref={heroRef}>
+      {/* Background image revealed by spotlight */}
+      <div
+        className={styles.bgImage}
+        style={{
+          '--mouse-x': `${mousePosition.x}px`,
+          '--mouse-y': `${mousePosition.y}px`,
+          backgroundImage: `url(${bgImage})`,
+        } as CSSProperties}
+      />
+
       {/* Ambient background layers */}
       <div className={styles.bgNoise} />
       <div className={styles.bgGradient} />
 
-      {/* Cursor-following light beam */}
+      {/* Sound wave circles - revealed by spotlight */}
       <div
-        className={styles.lightBeam}
+        className={styles.grid}
         style={{
           '--mouse-x': `${mousePosition.x}px`,
           '--mouse-y': `${mousePosition.y}px`,
         } as CSSProperties}
       />
 
-      {/* Decorative grid */}
-      <div className={styles.grid} />
-
-      {/* Content */}
-      <div className={styles.content}>
-        <div className={styles.logoWrapper}>
-          <img src={logo} alt="dk.tsk" className={styles.logo} />
-          <div className={styles.logoGlow} />
+      {/* Left-aligned minimal text block */}
+      <div className={styles.textBlock}>
+        <span className={styles.label}>sound collective</span>
+        <h1 className={styles.title}>dk.tsk</h1>
+        <div className={styles.meta}>
+          <span className={styles.location}>Yerevan</span>
+          <span className={styles.divider} />
+          <span className={styles.year}>est. 2019</span>
         </div>
+      </div>
 
-        <h1 className={styles.tagline}>
-          <span className={styles.taglineWord}>Sound.</span>
-          <span className={styles.taglineWord}>Space.</span>
-          <span className={styles.taglineWord}>Freedom.</span>
-        </h1>
-
-        <p className={styles.subtitle}>
-          Music production studio & creative collective
-          <br />
-          <span className={styles.location}>Yerevan, Armenia</span>
-        </p>
+      {/* Vertical text accent */}
+      <div className={styles.verticalText}>
+        <span>sound — space — freedom</span>
       </div>
 
       {/* Scroll indicator */}

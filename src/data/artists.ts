@@ -1,4 +1,6 @@
 import type { Artist } from '@/types';
+import innershaImage from '@/assets/artists/innersha.jpeg';
+import hovImage from '@/assets/artists/hov.jpg';
 
 export const artists: Artist[] = [
   {
@@ -11,36 +13,41 @@ export const artists: Artist[] = [
 Since 2019, Innersha has been integral to dk.tsk's sonic journey, performing at open-air gatherings in Dilijan's forests and intimate sessions at Teryan 91. The sound weaves together modular synthesis, field recordings, and carefully sculpted beats into experiences that transcend the dancefloor.
 
 Each release and live set is a meditation on space and time, inviting listeners to lose themselves in sound.`,
-    image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=600&fit=crop",
-    bandcamp: "https://innersha.bandcamp.com",
+    image: innershaImage,
     soundcloud: "https://soundcloud.com/innersha",
     instagram: "https://instagram.com/innersha",
     releases: [
       {
-        title: "Frequencies of Silence",
+        title: "Emeralds",
         year: "2024",
-        type: "EP",
-        bandcampUrl: "https://innersha.bandcamp.com/album/frequencies-of-silence"
-      },
-      {
-        title: "Mountain Echo",
-        year: "2023",
         type: "Single",
-        bandcampUrl: "https://innersha.bandcamp.com/track/mountain-echo"
+        bandcampUrl: "https://qeone.bandcamp.com/track/emeralds"
       }
     ],
     liveSets: [
       {
-        title: "Live at dk.tsk Opening",
-        date: "2024-03-15",
-        duration: "1:45:00",
-        soundcloudUrl: "https://soundcloud.com/innersha/live-dktsk-opening"
+        title: "Hypnus Memoirs - Page 137",
+        date: "2024",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/hypnus-memoirs/page-137-innersha"
       },
       {
-        title: "Dilijan Forest Session",
-        date: "2023-08-20",
-        duration: "2:00:00",
-        soundcloudUrl: "https://soundcloud.com/innersha/dilijan-forest"
+        title: "Sound Sculptors No.1",
+        date: "2024",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/qeone/sound-sculptors-no1-innersha?in=innersha/sets/live"
+      },
+      {
+        title: "Alliance Club Live @ Gimic Radio",
+        date: "2023",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/gimic-radio/alliance-club-w-innersha-live?in=innersha/sets/live"
+      },
+      {
+        title: "UTE Mix Series 104",
+        date: "2023",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/ute-rec/ute-mix-series-104-innersha-live?in=innersha/sets/live"
       }
     ]
   },
@@ -54,30 +61,65 @@ Each release and live set is a meditation on space and time, inviting listeners 
 The project emerged from late-night experiments in the original dk.tsk space, where broken hardware and improvised setups led to a signature sound—rough around the edges but precisely impactful. HOV's sets are physical experiences, designed for bodies in motion.
 
 Beyond the decks, HOV contributes to the collective's sonic identity through production collaborations and mentoring emerging artists in Yerevan's growing electronic scene.`,
-    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=600&fit=crop",
-    bandcamp: "https://hov-music.bandcamp.com",
-    soundcloud: "https://soundcloud.com/hov-music",
-    instagram: "https://instagram.com/hov.music",
+    image: hovImage,
+    soundcloud: "https://soundcloud.com/eychovi",
+    instagram: "https://www.instagram.com/bobes.aghjian",
     releases: [
       {
-        title: "Concrete Dreams",
+        title: "Primordial Cycles",
         year: "2024",
         type: "Album",
-        bandcampUrl: "https://hov-music.bandcamp.com/album/concrete-dreams"
-      },
-      {
-        title: "Teryan Sessions Vol. 1",
-        year: "2023",
-        type: "EP",
-        bandcampUrl: "https://hov-music.bandcamp.com/album/teryan-sessions"
+        bandcampUrl: "https://jackfresia.bandcamp.com/album/primordial-cycles"
       }
     ],
     liveSets: [
       {
-        title: "dk.tsk Podcast 003",
-        date: "2024-02-01",
-        duration: "1:30:00",
-        soundcloudUrl: "https://soundcloud.com/hov-music/dktsk-podcast-003"
+        title: "Live @ The Office",
+        date: "2024",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/theofficeyvn/hov-live-theoffice"
+      },
+      {
+        title: "Maracasse S2E08 Live",
+        date: "2024",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/marcollectif/maracasse-s2e08-hov-live-1"
+      },
+      {
+        title: "Volchok Podcast 58",
+        date: "2023",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/volchokclothing/hov-live-volchok-podcast-58"
+      },
+      {
+        title: "Scanner Club",
+        date: "2023",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/eychovi/scanner-club"
+      },
+      {
+        title: "Bohemnots Radio",
+        date: "2021",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/bohemnotsradio/hov-09-26-2021?in=eychovi/sets/radio-podcast"
+      },
+      {
+        title: "Mid Orange",
+        date: "2021",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/eychovi/mid-orange?in=eychovi/sets/radio-podcast"
+      },
+      {
+        title: "dk.tsk Rave",
+        date: "2021",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/eychovi/dktskrave?in=eychovi/sets/live-sets"
+      },
+      {
+        title: "Loopdeville Liveset",
+        date: "2020",
+        duration: "",
+        soundcloudUrl: "https://soundcloud.com/eychovi/loopdeville-liveset?in=eychovi/sets/live-sets"
       }
     ]
   }

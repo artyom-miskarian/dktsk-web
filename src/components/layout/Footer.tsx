@@ -1,16 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import logo from '@/assets/logo/logo.png';
-import type { NavItem, SocialLink } from '@/types';
-
-const navLinks: NavItem[] = [
-  { path: '/about', label: 'About' },
-  { path: '/artists', label: 'Artists' },
-  { path: '/events', label: 'Events' },
-  { path: '/studio', label: 'Studio' },
-  { path: '/podcasts', label: 'Podcasts' },
-  { path: '/contact', label: 'Contact' },
-];
+import type { SocialLink } from '@/types';
 
 const socialLinks: SocialLink[] = [
   {
@@ -55,19 +46,6 @@ export default function Footer() {
             </Link>
             <p className={styles.tagline}>Sound. Space. Freedom.</p>
           </div>
-
-          <nav className={styles.nav}>
-            <h4 className={styles.navTitle}>Navigate</h4>
-            <ul className={styles.navList}>
-              {navLinks.map((link) => (
-                <li key={link.path}>
-                  <Link to={link.path} className={styles.navLink}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
 
           <div className={styles.connect}>
             <h4 className={styles.navTitle}>Connect</h4>

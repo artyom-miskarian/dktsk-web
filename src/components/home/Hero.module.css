@@ -9,13 +9,35 @@
   background: var(--bg-primary);
 }
 
-/* Background noise texture */
-.bgNoise {
+/* Background image with spotlight reveal */
+.bgImage {
   position: absolute;
   inset: 0;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  mask-image: radial-gradient(
+    500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 30%,
+    rgba(0, 0, 0, 0.1) 50%,
+    transparent 70%
+  );
+  -webkit-mask-image: radial-gradient(
+    500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 30%,
+    rgba(0, 0, 0, 0.1) 50%,
+    transparent 70%
+  );
   pointer-events: none;
+  transition: mask-image 0.1s ease, -webkit-mask-image 0.1s ease;
+}
+
+/* Background noise texture - disabled */
+.bgNoise {
+  display: none;
 }
 
 /* Subtle radial gradient */
@@ -30,29 +52,171 @@
   pointer-events: none;
 }
 
-/* Cursor-following light beam */
-.lightBeam {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(192, 192, 192, 0.08) 0%,
-    rgba(192, 192, 192, 0.03) 25%,
-    transparent 60%
-  );
-  pointer-events: none;
-  transition: background 0.1s ease;
-}
-
-/* Decorative grid */
+/* Sound wave concentric circles - revealed by spotlight */
 .grid {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(192, 192, 192, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(192, 192, 192, 0.02) 1px, transparent 1px);
-  background-size: 60px 60px;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  mask-image: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    transparent 70%
+  );
+  -webkit-mask-image: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    transparent 70%
+  );
+}
+
+/* Fibonacci sequence spacing: 21, 34, 55, 89, 144, 233, 377, 610... */
+/* Center positioned at third eye - 63% right, 30% top */
+.grid::before {
+  content: '';
+  position: absolute;
+  width: 300vmax;
+  height: 300vmax;
+  left: 62%;
+  top: 30%;
+  translate: -50% -50%;
+  background:
+    radial-gradient(circle at center, transparent 20px, rgba(180, 180, 180, 0.1) 21px, transparent 23px),
+    radial-gradient(circle at center, transparent 54px, rgba(180, 180, 180, 0.09) 55px, transparent 57px),
+    radial-gradient(circle at center, transparent 143px, rgba(180, 180, 180, 0.08) 144px, transparent 146px),
+    radial-gradient(circle at center, transparent 376px, rgba(180, 180, 180, 0.07) 377px, transparent 379px),
+    radial-gradient(circle at center, transparent 986px, rgba(180, 180, 180, 0.06) 987px, transparent 989px);
+  opacity: 0.9;
+  animation: fibPulse 9.888s ease-in-out infinite; /* 6.11s × φ ≈ 9.888s */
+}
+
+.grid::after {
+  content: '';
+  position: absolute;
+  width: 300vmax;
+  height: 300vmax;
+  left: 62%;
+  top: 30%;
+  translate: -50% -50%;
+  background:
+    radial-gradient(circle at center, transparent 33px, rgba(180, 180, 180, 0.12) 34px, transparent 36px),
+    radial-gradient(circle at center, transparent 88px, rgba(180, 180, 180, 0.1) 89px, transparent 91px),
+    radial-gradient(circle at center, transparent 232px, rgba(180, 180, 180, 0.08) 233px, transparent 235px),
+    radial-gradient(circle at center, transparent 609px, rgba(180, 180, 180, 0.06) 610px, transparent 612px);
+  opacity: 0.8;
+  animation: fibPulse 6.11s ease-in-out infinite reverse; /* Base timing */
+}
+
+/* Golden ratio (φ = 1.618) based animation */
+@keyframes fibPulse {
+  0%, 100% {
+    scale: 1;
+  }
+  38.2% {
+    scale: 1.05;
+  }
+  61.8% {
+    scale: 0.97;
+  }
+}
+
+/* Left-aligned text block */
+.textBlock {
+  position: absolute;
+  left: 8%;
+  bottom: 28%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  animation: fadeInLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  animation-delay: 0.3s;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--text-muted);
+  padding-left: 2px;
+}
+
+.title {
+  font-family: 'Monument Extended', 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: var(--text-primary);
+  margin: 0;
+  text-shadow: 0 0 80px rgba(192, 192, 192, 0.15);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+  padding-left: 2px;
+}
+
+.location,
+.year {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 20px;
+  height: 1px;
+  background: var(--accent-dim);
+  opacity: 0.4;
+}
+
+/* Vertical text accent */
+.verticalText {
+  position: absolute;
+  left: var(--space-xl);
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  z-index: 2;
+  animation: fadeIn 1.5s ease backwards;
+  animation-delay: 0.8s;
+}
+
+.verticalText span {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  color: var(--text-muted);
+  opacity: 0.4;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Main content */
@@ -176,16 +340,26 @@
   overflow: hidden;
 }
 
-.scrollDot {
+.scrollLine::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 3px;
-  height: 8px;
-  background: var(--accent);
-  border-radius: 2px;
-  animation: scrollBounce 2s ease-in-out infinite;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--accent) 50%,
+    transparent 100%
+  );
+  animation: scrollFlow 3s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.scrollDot {
+  display: none;
 }
 
 /* Corner accents */
@@ -251,31 +425,45 @@
   }
 }
 
-@keyframes scrollBounce {
-  0%, 100% {
-    top: 0;
-    opacity: 1;
+@keyframes scrollFlow {
+  0% {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
   }
-  50% {
-    top: 35px;
-    opacity: 0.3;
+  20% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
   }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .logo {
-    width: 140px;
+  .textBlock {
+    left: var(--space-lg);
+    bottom: 22%;
   }
 
-  .tagline {
-    font-size: var(--text-3xl);
-    flex-direction: column;
-    gap: var(--space-xs);
+  .title {
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
-  .subtitle {
-    font-size: var(--text-base);
+  .label {
+    font-size: 9px;
+  }
+
+  .location,
+  .year {
+    font-size: 10px;
+  }
+
+  .verticalText {
+    display: none;
   }
 
   .corner {
