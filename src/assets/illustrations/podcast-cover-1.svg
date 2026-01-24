@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#0a0a0a"/>
+
+  <!-- Large abstract face/mask - centered -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.9">
+    <!-- Face outline -->
+    <path d="M200 480 Q150 400 160 300 Q170 200 220 140 Q280 80 300 80 Q320 80 380 140 Q430 200 440 300 Q450 400 400 480"/>
+
+    <!-- Eyes -->
+    <ellipse cx="240" cy="250" rx="25" ry="15"/>
+    <ellipse cx="360" cy="250" rx="25" ry="15"/>
+    <circle cx="240" cy="250" r="8" fill="#e8e4dc" opacity="0.3"/>
+    <circle cx="360" cy="250" r="8" fill="#e8e4dc" opacity="0.3"/>
+
+    <!-- Nose -->
+    <path d="M300 280 L290 340 L310 340"/>
+
+    <!-- Mouth -->
+    <ellipse cx="300" cy="400" rx="40" ry="20"/>
+
+    <!-- Decorative patterns on face -->
+    <path d="M220 180 Q260 160 300 180 Q340 160 380 180"/>
+    <circle cx="300" cy="150" r="15"/>
+    <circle cx="300" cy="150" r="8"/>
+  </g>
+
+  <!-- Orbital rings -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <ellipse cx="300" cy="300" rx="250" ry="80" transform="rotate(-20 300 300)"/>
+    <ellipse cx="300" cy="300" rx="220" ry="70" transform="rotate(15 300 300)"/>
+    <circle cx="80" cy="250" r="5" fill="#e8e4dc"/>
+    <circle cx="520" cy="350" r="4" fill="#e8e4dc"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M40 40 L40 80 M40 40 L80 40"/>
+    <path d="M560 40 L560 80 M560 40 L520 40"/>
+    <path d="M40 560 L40 520 M40 560 L80 560"/>
+    <path d="M560 560 L560 520 M560 560 L520 560"/>
+  </g>
+</svg>

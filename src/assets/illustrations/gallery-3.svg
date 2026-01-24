@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- Abstract waveform landscape -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.9">
+    <path d="M0 400 Q100 350 200 400 Q300 450 400 400 Q500 350 600 400 Q700 450 800 400"/>
+    <path d="M0 420 Q100 370 200 420 Q300 470 400 420 Q500 370 600 420 Q700 470 800 420"/>
+    <path d="M0 440 Q100 390 200 440 Q300 490 400 440 Q500 390 600 440 Q700 490 800 440"/>
+  </g>
+
+  <!-- Floating geometric elements -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.8">
+    <polygon points="200,150 230,200 170,200"/>
+    <polygon points="200,160 220,190 180,190"/>
+
+    <rect x="550" y="120" width="60" height="60" transform="rotate(45 580 150)"/>
+    <rect x="560" y="130" width="40" height="40" transform="rotate(45 580 150)"/>
+
+    <circle cx="400" cy="200" r="40"/>
+    <circle cx="400" cy="200" r="30"/>
+    <circle cx="400" cy="200" r="20"/>
+  </g>
+
+  <!-- Connecting lines -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <line x1="200" y1="200" x2="360" y2="200"/>
+    <line x1="440" y1="200" x2="550" y2="150"/>
+    <circle cx="200" cy="200" r="4" fill="#e8e4dc"/>
+    <circle cx="580" cy="150" r="4" fill="#e8e4dc"/>
+  </g>
+
+  <!-- Dots pattern -->
+  <g fill="#e8e4dc" opacity="0.5">
+    <circle cx="100" cy="100" r="2"/>
+    <circle cx="150" cy="80" r="1.5"/>
+    <circle cx="300" cy="100" r="2"/>
+    <circle cx="500" cy="80" r="1.5"/>
+    <circle cx="650" cy="100" r="2"/>
+    <circle cx="700" cy="70" r="1.5"/>
+    <circle cx="100" cy="300" r="1.5"/>
+    <circle cx="700" cy="280" r="2"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M30 30 L30 60 M30 30 L60 30"/>
+    <path d="M770 30 L770 60 M770 30 L740 30"/>
+    <path d="M30 570 L30 540 M30 570 L60 570"/>
+    <path d="M770 570 L770 540 M770 570 L740 570"/>
+  </g>
+</svg>

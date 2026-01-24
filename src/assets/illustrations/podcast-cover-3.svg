@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#0a0a0a"/>
+
+  <!-- Microphone illustration -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.9">
+    <!-- Mic head -->
+    <ellipse cx="300" cy="200" rx="60" ry="80"/>
+    <ellipse cx="300" cy="200" rx="50" ry="70"/>
+
+    <!-- Mic grille pattern -->
+    <line x1="260" y1="160" x2="340" y2="160"/>
+    <line x1="255" y1="180" x2="345" y2="180"/>
+    <line x1="255" y1="200" x2="345" y2="200"/>
+    <line x1="255" y1="220" x2="345" y2="220"/>
+    <line x1="260" y1="240" x2="340" y2="240"/>
+
+    <!-- Mic body -->
+    <rect x="280" y="280" width="40" height="100" rx="5"/>
+    <line x1="280" y1="300" x2="320" y2="300"/>
+    <line x1="280" y1="320" x2="320" y2="320"/>
+
+    <!-- Stand -->
+    <path d="M250 380 Q300 400 350 380"/>
+    <line x1="300" y1="380" x2="300" y2="480"/>
+    <ellipse cx="300" cy="490" rx="80" ry="20"/>
+  </g>
+
+  <!-- Sound waves -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M180 200 Q140 150 180 100"/>
+    <path d="M160 200 Q100 130 160 60"/>
+    <path d="M420 200 Q460 150 420 100"/>
+    <path d="M440 200 Q500 130 440 60"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <circle cx="100" cy="500" r="40"/>
+    <circle cx="100" cy="500" r="30"/>
+    <circle cx="500" cy="100" r="35"/>
+    <circle cx="500" cy="100" r="25"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M40 40 L40 80 M40 40 L80 40"/>
+    <path d="M560 40 L560 80 M560 40 L520 40"/>
+    <path d="M40 560 L40 520 M40 560 L80 560"/>
+    <path d="M560 560 L560 520 M560 560 L520 560"/>
+  </g>
+</svg>

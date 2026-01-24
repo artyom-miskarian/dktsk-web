@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#0a0a0a"/>
+
+  <!-- Vinyl record style -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.9">
+    <!-- Outer rings -->
+    <circle cx="300" cy="300" r="220"/>
+    <circle cx="300" cy="300" r="200"/>
+    <circle cx="300" cy="300" r="180"/>
+    <circle cx="300" cy="300" r="160"/>
+    <circle cx="300" cy="300" r="140"/>
+    <circle cx="300" cy="300" r="120"/>
+    <circle cx="300" cy="300" r="100"/>
+
+    <!-- Center label -->
+    <circle cx="300" cy="300" r="60"/>
+    <circle cx="300" cy="300" r="50" fill="#e8e4dc" opacity="0.1"/>
+    <circle cx="300" cy="300" r="10" fill="#e8e4dc" opacity="0.3"/>
+  </g>
+
+  <!-- Tonearm -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.8">
+    <circle cx="520" cy="120" r="25"/>
+    <line x1="505" y1="140" x2="380" y2="280"/>
+    <ellipse cx="370" cy="290" rx="15" ry="8" transform="rotate(-50 370 290)"/>
+  </g>
+
+  <!-- Sound wave emanating -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M80 300 Q60 250 80 200"/>
+    <path d="M60 300 Q30 230 60 160"/>
+    <path d="M520 300 Q540 250 520 200"/>
+    <path d="M540 300 Q570 230 540 160"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M40 40 L40 80 M40 40 L80 40"/>
+    <path d="M560 40 L560 80 M560 40 L520 40"/>
+    <path d="M40 560 L40 520 M40 560 L80 560"/>
+    <path d="M560 560 L560 520 M560 560 L520 560"/>
+  </g>
+</svg>

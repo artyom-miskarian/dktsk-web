@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+  <rect width="800" height="1000" fill="#0a0a0a"/>
+
+  <!-- Abstract building/venue -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.9">
+    <!-- Main structure -->
+    <rect x="200" y="400" width="400" height="400" rx="4"/>
+    <rect x="220" y="420" width="360" height="360" rx="2"/>
+
+    <!-- Windows/doors -->
+    <rect x="260" y="500" width="80" height="120" rx="2"/>
+    <rect x="360" y="500" width="80" height="120" rx="2"/>
+    <rect x="460" y="500" width="80" height="120" rx="2"/>
+
+    <rect x="260" y="650" width="80" height="100" rx="2"/>
+    <rect x="360" y="650" width="80" height="100" rx="2"/>
+    <rect x="460" y="650" width="80" height="100" rx="2"/>
+
+    <!-- Entrance -->
+    <path d="M350 800 L350 750 Q400 720 450 750 L450 800"/>
+  </g>
+
+  <!-- Sound waves emanating from building -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M400 380 Q350 350 400 320 Q450 350 400 380"/>
+    <path d="M400 360 Q320 310 400 260 Q480 310 400 360"/>
+    <path d="M400 340 Q280 270 400 200 Q520 270 400 340"/>
+  </g>
+
+  <!-- Moon -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.8">
+    <circle cx="650" cy="150" r="50"/>
+    <circle cx="635" cy="135" r="10"/>
+    <circle cx="665" cy="160" r="12"/>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#e8e4dc" opacity="0.6">
+    <circle cx="150" cy="100" r="3"/>
+    <circle cx="250" cy="150" r="2"/>
+    <circle cx="100" cy="200" r="2"/>
+    <circle cx="500" cy="80" r="2"/>
+    <circle cx="550" cy="200" r="2.5"/>
+    <circle cx="700" cy="250" r="2"/>
+    <circle cx="200" cy="300" r="1.5"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M50 50 L50 100 M50 50 L100 50"/>
+    <path d="M750 50 L750 100 M750 50 L700 50"/>
+    <path d="M50 950 L50 900 M50 950 L100 950"/>
+    <path d="M750 950 L750 900 M750 950 L700 950"/>
+  </g>
+</svg>

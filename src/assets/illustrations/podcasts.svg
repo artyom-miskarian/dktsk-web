@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#0a0a0a"/>
+
+  <!-- Headphones -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.9">
+    <!-- Headband -->
+    <path d="M180 200 Q180 100 300 100 Q420 100 420 200"/>
+    <path d="M190 200 Q190 115 300 115 Q410 115 410 200"/>
+
+    <!-- Left ear cup -->
+    <rect x="155" y="180" width="50" height="70" rx="10"/>
+    <rect x="165" y="190" width="30" height="50" rx="6"/>
+    <ellipse cx="180" cy="215" rx="10" ry="15"/>
+
+    <!-- Right ear cup -->
+    <rect x="395" y="180" width="50" height="70" rx="10"/>
+    <rect x="405" y="190" width="30" height="50" rx="6"/>
+    <ellipse cx="420" cy="215" rx="10" ry="15"/>
+  </g>
+
+  <!-- Sound waves from headphones -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.6">
+    <!-- Left waves -->
+    <path d="M140 215 Q120 190 140 165"/>
+    <path d="M125 215 Q95 180 125 145"/>
+    <path d="M110 215 Q70 170 110 125"/>
+
+    <!-- Right waves -->
+    <path d="M460 215 Q480 190 460 165"/>
+    <path d="M475 215 Q505 180 475 145"/>
+    <path d="M490 215 Q530 170 490 125"/>
+  </g>
+
+  <!-- Waveform at bottom -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M100 320 L100 300 L110 340 L120 290 L130 330 L140 300 L150 320"/>
+    <path d="M180 320 L180 280 L190 350 L200 270 L210 340 L220 290 L230 320"/>
+    <path d="M260 320 L260 290 L270 345 L280 275 L290 335 L300 295 L310 320"/>
+    <path d="M340 320 L340 285 L350 340 L360 280 L370 335 L380 300 L390 320"/>
+    <path d="M420 320 L420 295 L430 335 L440 290 L450 330 L460 305 L470 320"/>
+    <path d="M500 320 L500 300 L510 330 L520 295 L530 325 L540 310 L550 320"/>
+  </g>
+
+  <!-- Decorative circles/planets -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <circle cx="80" cy="80" r="25"/>
+    <circle cx="80" cy="80" r="18" stroke-dasharray="3 3"/>
+    <circle cx="520" cy="350" r="20"/>
+    <ellipse cx="520" cy="350" rx="30" ry="8"/>
+  </g>
+
+  <!-- Orbital lines -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.3">
+    <ellipse cx="300" cy="200" rx="180" ry="60" transform="rotate(-15 300 200)"/>
+  </g>
+
+  <!-- Small dots -->
+  <g fill="#e8e4dc" opacity="0.5">
+    <circle cx="300" cy="70" r="3"/>
+    <circle cx="50" cy="200" r="2"/>
+    <circle cx="550" cy="180" r="2"/>
+    <circle cx="300" cy="380" r="2"/>
+  </g>
+
+  <!-- Corner accents -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M30 30 L30 60 M30 30 L60 30"/>
+    <path d="M570 30 L570 60 M570 30 L540 30"/>
+    <path d="M30 370 L30 340 M30 370 L60 370"/>
+    <path d="M570 370 L570 340 M570 370 L540 370"/>
+  </g>
+</svg>

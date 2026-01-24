@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#0a0a0a"/>
+
+  <!-- Mountain/landscape silhouette -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M0 350 L100 280 L180 320 L280 200 L350 260 L450 180 L520 230 L600 150"/>
+    <path d="M0 370 L150 300 L250 340 L380 250 L500 290 L600 220"/>
+  </g>
+
+  <!-- Moon/sun circle -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.9">
+    <circle cx="480" cy="100" r="40"/>
+    <circle cx="480" cy="100" r="35" stroke-dasharray="4 4"/>
+    <!-- Crater details -->
+    <circle cx="465" cy="90" r="6"/>
+    <circle cx="495" cy="105" r="8"/>
+    <circle cx="475" cy="115" r="4"/>
+  </g>
+
+  <!-- Crowd silhouettes - abstract raised hands -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.85">
+    <!-- Hands reaching up -->
+    <path d="M80 380 L80 320 Q80 310 85 305 L90 290"/>
+    <path d="M85 380 L90 340 L95 310"/>
+
+    <path d="M150 380 L150 300 Q155 290 160 285"/>
+    <path d="M160 380 L165 320 Q170 305 175 300"/>
+
+    <path d="M230 380 L230 290 L225 270"/>
+    <path d="M245 380 L250 310 L255 285"/>
+
+    <path d="M320 380 L320 280 Q325 270 330 265"/>
+    <path d="M335 380 L340 300 L345 275"/>
+
+    <path d="M410 380 L410 295 L405 275"/>
+    <path d="M425 380 L430 310 L435 290"/>
+
+    <path d="M500 380 L500 305 Q505 295 510 290"/>
+    <path d="M515 380 L520 320 L525 300"/>
+  </g>
+
+  <!-- Sound waves emanating from center -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M300 250 Q250 200 300 150 Q350 200 300 250"/>
+    <path d="M300 270 Q220 200 300 130 Q380 200 300 270"/>
+    <path d="M300 290 Q190 200 300 110 Q410 200 300 290"/>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#e8e4dc" opacity="0.6">
+    <circle cx="100" cy="80" r="2"/>
+    <circle cx="200" cy="50" r="1.5"/>
+    <circle cx="150" cy="120" r="1"/>
+    <circle cx="350" cy="70" r="2"/>
+    <circle cx="400" cy="40" r="1.5"/>
+    <circle cx="550" cy="60" r="1"/>
+    <circle cx="580" cy="120" r="1.5"/>
+    <circle cx="50" cy="150" r="1"/>
+  </g>
+
+  <!-- Corner accents -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M30 30 L30 60 M30 30 L60 30"/>
+    <path d="M570 30 L570 60 M570 30 L540 30"/>
+    <path d="M30 370 L30 340 M30 370 L60 370"/>
+    <path d="M570 370 L570 340 M570 370 L540 370"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+  <rect width="800" height="1000" fill="#0a0a0a"/>
+
+  <!-- Gorge/canyon walls -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.9">
+    <!-- Left wall -->
+    <path d="M0 300 L100 350 L80 450 L120 550 L60 650 L100 750 L50 850 L0 900"/>
+    <path d="M50 320 L130 360 L110 450 L150 540 L100 630 L140 720 L90 800"/>
+
+    <!-- Right wall -->
+    <path d="M800 300 L700 350 L720 450 L680 550 L740 650 L700 750 L750 850 L800 900"/>
+    <path d="M750 320 L670 360 L690 450 L650 540 L700 630 L660 720 L710 800"/>
+  </g>
+
+  <!-- Sun/solstice symbol -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.9">
+    <circle cx="400" cy="300" r="80"/>
+    <circle cx="400" cy="300" r="60"/>
+    <circle cx="400" cy="300" r="40"/>
+
+    <!-- Rays -->
+    <line x1="400" y1="180" x2="400" y2="140"/>
+    <line x1="400" y1="420" x2="400" y2="460"/>
+    <line x1="280" y1="300" x2="240" y2="300"/>
+    <line x1="520" y1="300" x2="560" y2="300"/>
+
+    <line x1="315" y1="215" x2="285" y2="185"/>
+    <line x1="485" y1="215" x2="515" y2="185"/>
+    <line x1="315" y1="385" x2="285" y2="415"/>
+    <line x1="485" y1="385" x2="515" y2="415"/>
+  </g>
+
+  <!-- Sound waves in canyon -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M200 600 Q300 550 400 600 Q500 650 600 600"/>
+    <path d="M180 650 Q300 580 420 650 Q540 720 660 650"/>
+    <path d="M160 700 Q300 610 440 700 Q580 790 700 700"/>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#e8e4dc" opacity="0.5">
+    <circle cx="200" cy="150" r="2"/>
+    <circle cx="300" cy="100" r="2"/>
+    <circle cx="500" cy="120" r="2"/>
+    <circle cx="600" cy="180" r="2"/>
+    <circle cx="250" cy="200" r="1.5"/>
+    <circle cx="550" cy="220" r="1.5"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M50 50 L50 100 M50 50 L100 50"/>
+    <path d="M750 50 L750 100 M750 50 L700 50"/>
+    <path d="M50 950 L50 900 M50 950 L100 950"/>
+    <path d="M750 950 L750 900 M750 950 L700 950"/>
+  </g>
+</svg>

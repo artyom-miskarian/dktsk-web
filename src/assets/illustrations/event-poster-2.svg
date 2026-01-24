@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+  <rect width="800" height="1000" fill="#0a0a0a"/>
+
+  <!-- Mountain landscape -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.9">
+    <path d="M0 800 L200 500 L350 650 L500 350 L650 550 L800 400 L800 800 Z"/>
+    <path d="M0 850 L250 600 L400 750 L600 500 L800 650 L800 850 Z" opacity="0.6"/>
+  </g>
+
+  <!-- Trees/forest silhouette -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M100 800 L120 700 L140 800"/>
+    <path d="M110 750 L120 700 L130 750"/>
+    <path d="M160 800 L180 680 L200 800"/>
+    <path d="M170 730 L180 680 L190 730"/>
+    <path d="M650 700 L670 600 L690 700"/>
+    <path d="M660 650 L670 600 L680 650"/>
+    <path d="M700 720 L720 620 L740 720"/>
+  </g>
+
+  <!-- Large moon -->
+  <g stroke="#e8e4dc" stroke-width="2" fill="none" opacity="0.9">
+    <circle cx="400" cy="250" r="100"/>
+    <circle cx="400" cy="250" r="90" stroke-dasharray="6 4"/>
+    <circle cx="370" cy="220" r="15"/>
+    <circle cx="430" cy="260" r="20"/>
+    <circle cx="390" cy="290" r="10"/>
+  </g>
+
+  <!-- Sound/frequency waves -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <ellipse cx="400" cy="250" rx="150" ry="50"/>
+    <ellipse cx="400" cy="250" rx="200" ry="70"/>
+    <ellipse cx="400" cy="250" rx="250" ry="90"/>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#e8e4dc" opacity="0.6">
+    <circle cx="100" cy="100" r="3"/>
+    <circle cx="200" cy="150" r="2"/>
+    <circle cx="150" cy="200" r="2"/>
+    <circle cx="600" cy="80" r="2.5"/>
+    <circle cx="700" cy="130" r="2"/>
+    <circle cx="650" cy="180" r="1.5"/>
+    <circle cx="300" cy="100" r="2"/>
+    <circle cx="500" cy="120" r="1.5"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M50 50 L50 100 M50 50 L100 50"/>
+    <path d="M750 50 L750 100 M750 50 L700 50"/>
+    <path d="M50 950 L50 900 M50 950 L100 950"/>
+    <path d="M750 950 L750 900 M750 950 L700 950"/>
+  </g>
+</svg>

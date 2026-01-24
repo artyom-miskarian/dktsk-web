@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- Network/connection visualization -->
+  <g stroke="#e8e4dc" stroke-width="1.5" fill="none" opacity="0.9">
+    <!-- Central node -->
+    <circle cx="400" cy="300" r="30"/>
+    <circle cx="400" cy="300" r="20" fill="#e8e4dc" opacity="0.1"/>
+
+    <!-- Connected nodes -->
+    <circle cx="250" cy="200" r="20"/>
+    <circle cx="550" cy="200" r="20"/>
+    <circle cx="200" cy="350" r="20"/>
+    <circle cx="600" cy="350" r="20"/>
+    <circle cx="300" cy="450" r="20"/>
+    <circle cx="500" cy="450" r="20"/>
+
+    <!-- Outer nodes -->
+    <circle cx="150" cy="120" r="12"/>
+    <circle cx="650" cy="120" r="12"/>
+    <circle cx="100" cy="400" r="12"/>
+    <circle cx="700" cy="400" r="12"/>
+    <circle cx="200" cy="520" r="12"/>
+    <circle cx="600" cy="520" r="12"/>
+
+    <!-- Connecting lines -->
+    <line x1="400" y1="270" x2="250" y2="220"/>
+    <line x1="400" y1="270" x2="550" y2="220"/>
+    <line x1="370" y1="300" x2="220" y2="350"/>
+    <line x1="430" y1="300" x2="580" y2="350"/>
+    <line x1="400" y1="330" x2="300" y2="430"/>
+    <line x1="400" y1="330" x2="500" y2="430"/>
+
+    <!-- Outer connections -->
+    <line x1="250" y1="180" x2="150" y2="132"/>
+    <line x1="550" y1="180" x2="650" y2="132"/>
+    <line x1="180" y1="350" x2="112" y2="400"/>
+    <line x1="620" y1="350" x2="688" y2="400"/>
+    <line x1="300" y1="470" x2="212" y2="520"/>
+    <line x1="500" y1="470" x2="588" y2="520"/>
+  </g>
+
+  <!-- Pulsing rings -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.3">
+    <circle cx="400" cy="300" r="80"/>
+    <circle cx="400" cy="300" r="130"/>
+    <circle cx="400" cy="300" r="180"/>
+  </g>
+
+  <!-- Corner elements -->
+  <g stroke="#e8e4dc" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M30 30 L30 60 M30 30 L60 30"/>
+    <path d="M770 30 L770 60 M770 30 L740 30"/>
+    <path d="M30 570 L30 540 M30 570 L60 570"/>
+    <path d="M770 570 L770 540 M770 570 L740 570"/>
+  </g>
+</svg>
