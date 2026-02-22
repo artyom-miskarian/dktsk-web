@@ -26,14 +26,6 @@ export const podcastsService = {
     ),
 
   /**
-   * Get podcasts by tag
-   */
-  getByTag: (tag: string): Podcast[] =>
-    podcasts.filter((p) =>
-      p.tags.some((t) => t.toLowerCase() === tag.toLowerCase())
-    ),
-
-  /**
    * Sort podcasts by date
    */
   sortByDate: (list: Podcast[], ascending = false): Podcast[] =>

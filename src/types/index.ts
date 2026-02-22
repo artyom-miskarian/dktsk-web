@@ -51,10 +51,8 @@ export interface Podcast {
   artist: string;
   date: string;
   duration: string;
-  description: string;
   cover: string;
-  soundcloudUrl: string;
-  tags: string[];
+  url: string;
 }
 
 // ============================================
