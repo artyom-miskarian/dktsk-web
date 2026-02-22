@@ -35,6 +35,18 @@
   transition: mask-image 0.1s ease, -webkit-mask-image 0.1s ease;
 }
 
+/* Background video (mobile only) */
+.bgVideo {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 /* Background noise texture - disabled */
 .bgNoise {
   display: none;
@@ -445,9 +457,11 @@
 /* Responsive */
 @media (max-width: 768px) {
   .bgImage {
-    mask-image: none;
-    -webkit-mask-image: none;
-    opacity: 0.5;
+    display: none;
+  }
+
+  .bgVideo {
+    display: block;
   }
 
   .textBlock {

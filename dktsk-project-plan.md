@@ -359,7 +359,7 @@ src/
   name: "Innersha",
   tagline: "Deep, hypnotic soundscapes",
   bio: "Lorem ipsum...",
-  image: "/images/artists/innersha.jpg",
+  image: "/main/artists/innersha.jpg",
   bandcamp: "https://innersha.bandcamp.com",
   soundcloud: "https://soundcloud.com/innersha",
   instagram: "https://instagram.com/innersha",
@@ -387,10 +387,10 @@ src/
   date: "2023-08-15",
   location: "Dilijan, Armenia",
   description: "Lorem ipsum...",
-  poster: "/images/events/mountain-frequencies.jpg",
+  poster: "/main/events/mountain-frequencies.jpg",
   gallery: [
-    "/images/events/mf-01.jpg",
-    "/images/events/mf-02.jpg"
+    "/main/events/mf-01.jpg",
+    "/main/events/mf-02.jpg"
   ],
   videos: [
     "https://youtube.com/..."
@@ -408,7 +408,7 @@ src/
   artist: "Innersha",
   date: "2024-01-15",
   duration: "1:32:00",
-  cover: "/images/podcasts/podcast-001.jpg",
+  cover: "/main/podcasts/podcast-001.jpg",
   soundcloudUrl: "https://soundcloud.com/...",
   soundcloudEmbed: "<iframe>...</iframe>"
 }

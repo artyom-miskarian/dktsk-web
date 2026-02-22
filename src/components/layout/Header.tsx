@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
-import logo from '@/assets/logo/logo.png';
+import logo from '@/assets/main/logo.png';
 import type { NavItem, SocialLink } from '@/types';
 
 const navItems: NavItem[] = [
@@ -99,22 +99,23 @@ export default function Header() {
               </li>
             ))}
           </ul>
-        </nav>
 
-        <div className={styles.socialLinks}>
-          {socialLinks.map((social) => (
-            <a
-              key={social.name}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialLink}
-              aria-label={social.name}
-            >
-              {social.icon}
-            </a>
-          ))}
-        </div>
+          {/* Social links — inline on desktop, bottom of mobile menu */}
+          <div className={styles.socialLinks}>
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+                aria-label={social.name}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+        </nav>
 
         <button
           className={`${styles.menuButton} ${isMenuOpen ? styles.menuOpen : ''}`}

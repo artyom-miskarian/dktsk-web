@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, type CSSProperties } from 'react';
 import styles from './Hero.module.css';
-import bgImage from '@/assets/images/bg.jpg';
+import bgImage from '@/assets/main/hero.jpg';
+import heroVideo from '@/assets/hero-mobile.mp4';
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -24,7 +25,7 @@ export default function Hero() {
 
   return (
     <section className={styles.hero} ref={heroRef}>
-      {/* Background image revealed by spotlight */}
+      {/* Background image revealed by spotlight (desktop) */}
       <div
         className={styles.bgImage}
         style={{
@@ -32,6 +33,16 @@ export default function Hero() {
           '--mouse-y': `${mousePosition.y}px`,
           backgroundImage: `url(${bgImage})`,
         } as CSSProperties}
+      />
+
+      {/* Background video (mobile only) */}
+      <video
+        className={styles.bgVideo}
+        src={heroVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
       />
 
       {/* Ambient background layers */}
