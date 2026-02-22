@@ -6,7 +6,7 @@ import type { NavItem, SocialLink } from '@/types';
 
 const navItems: NavItem[] = [
   { path: '/events', label: 'Events' },
-  { path: '/artists', label: 'Artists' },
+  { path: '/artists', label: 'Residents' },
   { path: '/podcasts', label: 'Podcasts' },
   { path: '/studio', label: 'Studio' },
 ];

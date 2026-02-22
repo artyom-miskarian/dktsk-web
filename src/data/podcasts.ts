@@ -4,7 +4,7 @@ export const podcasts: Podcast[] = [
   {
     id: "podcast-027",
     title: "dk.tsk podcast [027]",
-    artist: "Resurr^ection",
+    artist: "Resurrêction",
     date: "2022-09-04",
     duration: "1:01:33",
     cover: "https://img.youtube.com/vi/S20gFQ525iM/hqdefault.jpg",
