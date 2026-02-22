@@ -98,6 +98,29 @@
   width: 100%;
 }
 
+/* Social links */
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.socialLink:hover {
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
 /* Mobile menu button */
 .menuButton {
   display: none;
@@ -189,5 +212,9 @@
   .navLink {
     font-size: var(--text-lg);
     align-items: flex-start;
+  }
+
+  .socialLinks {
+    display: none;
   }
 }
