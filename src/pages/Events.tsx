@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { SectionTitle } from '@/components/ui';
 import { EventGrid } from '@/components/events';
 import { useEvents } from '@/hooks';
 import { eventsService } from '@/services/eventsService';
@@ -23,17 +22,6 @@ export default function Events() {
 
   return (
     <div className={styles.page}>
-      {/* Hero */}
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Events</h1>
-          <p className={styles.heroSubtitle}>
-            From forest gatherings to studio sessions — documenting our sonic journey.
-          </p>
-        </div>
-        <div className={styles.heroDecoration} />
-      </section>
-
       {/* Filter & Content */}
       <section className={styles.content}>
         <div className={styles.container}>

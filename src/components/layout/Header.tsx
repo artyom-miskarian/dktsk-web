@@ -5,12 +5,10 @@ import logo from '@/assets/logo/logo.png';
 import type { NavItem, SocialLink } from '@/types';
 
 const navItems: NavItem[] = [
-  { path: '/about', label: 'About' },
-  { path: '/artists', label: 'Artists' },
   { path: '/events', label: 'Events' },
-  { path: '/studio', label: 'Studio' },
+  { path: '/artists', label: 'Artists' },
   { path: '/podcasts', label: 'Podcasts' },
-  { path: '/contact', label: 'Contact' },
+  { path: '/studio', label: 'Studio' },
 ];
 
 const socialLinks: SocialLink[] = [

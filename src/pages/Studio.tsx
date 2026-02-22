@@ -1,5 +1,4 @@
-import { SectionTitle, ImageGallery, Button } from '@/components/ui';
-import { PricingTable } from '@/components/studio';
+import { ImageGallery } from '@/components/ui';
 import styles from './Studio.module.css';
 
 const studioImages: string[] = [
@@ -12,17 +11,6 @@ const studioImages: string[] = [
 export default function Studio() {
   return (
     <div className={styles.page}>
-      {/* Hero */}
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Studio</h1>
-          <p className={styles.heroSubtitle}>
-            A space for creation
-          </p>
-        </div>
-        <div className={styles.heroDecoration} />
-      </section>
-
       {/* About the Space */}
       <section className={styles.about}>
         <div className={styles.container}>
@@ -112,54 +100,10 @@ export default function Studio() {
       {/* Gallery */}
       <section className={styles.gallery}>
         <div className={styles.container}>
-          <SectionTitle subtitle="The space">
-            Gallery
-          </SectionTitle>
           <ImageGallery images={studioImages} columns={2} />
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className={styles.pricing}>
-        <div className={styles.container}>
-          <SectionTitle
-            align="center"
-            subtitle="Flexible options for every project"
-          >
-            Pricing
-          </SectionTitle>
-          <PricingTable />
-        </div>
-      </section>
-
-      {/* Booking CTA */}
-      <section className={styles.booking}>
-        <div className={styles.container}>
-          <div className={styles.bookingCard}>
-            <div className={styles.bookingContent}>
-              <h2 className={styles.bookingTitle}>Ready to create?</h2>
-              <p className={styles.bookingText}>
-                Book your session or get in touch to discuss custom arrangements.
-              </p>
-            </div>
-            <div className={styles.bookingActions}>
-              <Button
-                href="mailto:hello@dktsk.am?subject=Studio Booking"
-                size="large"
-              >
-                Book a Session
-              </Button>
-              <Button
-                variant="secondary"
-                href="mailto:hello@dktsk.am?subject=Studio Inquiry"
-                size="large"
-              >
-                Contact Us
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

@@ -22,13 +22,6 @@ export default function Hero() {
     return () => hero.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const scrollToContent = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: 'smooth',
-    });
-  };
-
   return (
     <section className={styles.hero} ref={heroRef}>
       {/* Background image revealed by spotlight */}
@@ -60,18 +53,6 @@ export default function Hero() {
       <div className={styles.verticalText}>
         <span>sound — space — freedom</span>
       </div>
-
-      {/* Scroll indicator */}
-      <button
-        className={styles.scrollIndicator}
-        onClick={scrollToContent}
-        aria-label="Scroll to content"
-      >
-        <span className={styles.scrollText}>Explore</span>
-        <div className={styles.scrollLine}>
-          <div className={styles.scrollDot} />
-        </div>
-      </button>
 
       {/* Corner accents */}
       <div className={`${styles.corner} ${styles.cornerTopLeft}`} />
