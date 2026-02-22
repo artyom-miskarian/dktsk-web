@@ -456,6 +456,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero {
+    height: 100svh;
+  }
+
   .bgImage {
     display: none;
   }
@@ -467,7 +471,7 @@
   .textBlock {
     left: var(--space-lg);
     bottom: auto;
-    top: 20%;
+    top: 15%;
   }
 
   .title {
