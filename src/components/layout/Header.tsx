@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 import logo from '@/assets/main/logo.png';
@@ -46,6 +46,8 @@ const socialLinks: SocialLink[] = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [logoHidden, setLogoHidden] = useState(false);
+  const lastScrollY = useRef(0);
 
   // Sync body overflow with menu state
   useEffect(() => {
@@ -57,10 +59,13 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentY = window.scrollY;
+      setIsScrolled(currentY > 50);
+      setLogoHidden(currentY > 50 && currentY > lastScrollY.current);
+      lastScrollY.current = currentY;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -78,7 +83,7 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
-        <Link to="/" className={styles.logo} onClick={closeMenu}>
+        <Link to="/" className={`${styles.logo} ${logoHidden ? styles.logoHidden : ''}`} onClick={closeMenu}>
           <img src={logo} alt="dk.tsk" className={styles.logoImage} />
         </Link>
 
