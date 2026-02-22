@@ -466,7 +466,8 @@
 
   .textBlock {
     left: var(--space-lg);
-    bottom: 22%;
+    bottom: auto;
+    top: 20%;
   }
 
   .title {
