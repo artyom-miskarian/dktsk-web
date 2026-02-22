@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, type CSSProperties } from 'react';
 import styles from './Hero.module.css';
 import bgImage from '@/assets/main/hero.jpg';
-import heroVideo from '@/assets/hero-mobile.mp4';
+import heroVideo from '@/assets/main/hero-mobile.mp4';
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
