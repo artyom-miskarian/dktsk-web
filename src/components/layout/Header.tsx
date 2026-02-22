@@ -61,7 +61,7 @@ export default function Header() {
     const handleScroll = () => {
       const currentY = window.scrollY;
       setIsScrolled(currentY > 50);
-      setLogoHidden(currentY > 50 && currentY > lastScrollY.current);
+      setLogoHidden(currentY > 50);
       lastScrollY.current = currentY;
     };
 
